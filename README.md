@@ -1,44 +1,76 @@
-# vue3-admin-demo
+# Vue3 企业级后台管理系统
 
-This template should help get you started developing with Vue 3 in Vite.
+> 本项目是为前端开发实习岗位面试精心准备的实战作品，包含数据看板、用户管理、导出Excel、暗黑主题等核心功能。
 
-## Recommended IDE Setup
+## 🚀 线上体验
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+🔗 **访问地址**：[https://alicelu-yi.github.io/vue3-admin-demo/](https://alicelu-yi.github.io/vue3-admin-demo/)
 
-## Recommended Browser Setup
+> 测试账号：`admin` / `123456`
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 📦 部署说明
 
-## Customize configuration
+本项目使用 GitHub Pages 部署，静态 Mock 数据已打包进前端代码中，无需后端服务即可完整演示所有功能。
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ✨ 技术栈
 
-## Project Setup
+- **前端框架**：Vue 3 (Composition API)
+- **构建工具**：Vite
+- **UI 组件库**：Element Plus
+- **路由管理**：Vue Router
+- **状态管理**：Pinia
+- **HTTP 请求**：Axios
+- **数据模拟**：Mock.js
+- **数据可视化**：ECharts + vue-echarts
+- **Excel 导出**：xlsx
+- **代码规范**：ESLint + Prettier
 
-```sh
+## 📄 项目结构
+
+```plaintext
+vue3-admin-demo/
+├── mock/              # Mock 数据（开发环境用）
+├── public/            # 静态资源
+├── src/
+│   ├── assets/        # 资源文件
+│   ├── layout/        # 布局组件
+│   ├── router/        # 路由配置
+│   ├── utils/         # 工具函数（axios 封装）
+│   ├── views/         # 页面组件（Login, Dashboard, User）
+│   ├── App.vue
+│   ├── main.js
+│   └── mock.js        # 前端 Mock 拦截（生产环境用）
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🎯 主要功能
+
+- ✅ 登录/退出（演示账号）
+- ✅ 数据看板（统计卡片 + ECharts 图表）
+- ✅ 用户管理（增删改查、分页、模糊搜索、表单校验）
+- ✅ 导出 Excel（当前页 / 全部数据）
+- ✅ 暗黑主题切换（支持本地存储）
+- ✅ 响应式布局（手机、平板、桌面自适应）
+
+## 🛠 本地运行
+
+```bash
+# 克隆项目
+git clone https://github.com/AliceLu-Yi/vue3-admin-demo.git
+
+# 进入目录
+cd vue3-admin-demo
+
+# 安装依赖
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# 启动开发服务器
 npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
+# 构建生产版本
 npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
